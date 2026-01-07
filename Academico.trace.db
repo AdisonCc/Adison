@@ -1,0 +1,965 @@
+2025-12-01 10:13:11.887082-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT *\000d\000aFROM estudiante, escuela\000d\000aWHERE escuela.codigo_escuela=estudiante.codigo_escuela\000d\000a\000d\000a[*]SELECT CODIGO_ESCUELA, CODIGO ESTUDIANTE, AP_ESCTUDIANTE, AM_ESTUDIANTE, NOMBRE\000d\000aFROM ESTUDIANTE, ESCUELA"
+Syntax error in SQL statement "SELECT *\000d\000aFROM estudiante, escuela\000d\000aWHERE escuela.codigo_escuela=estudiante.codigo_escuela\000d\000a\000d\000a[*]SELECT CODIGO_ESCUELA, CODIGO ESTUDIANTE, AP_ESCTUDIANTE, AM_ESTUDIANTE, NOMBRE\000d\000aFROM ESTUDIANTE, ESCUELA"; SQL statement:
+SELECT *
+FROM estudiante, escuela
+WHERE escuela.codigo_escuela=estudiante.codigo_escuela
+
+SELECT CODIGO_ESCUELA, CODIGO ESTUDIANTE, AP_ESCTUDIANTE, AM_ESTUDIANTE, NOMBRE
+FROM ESTUDIANTE, ESCUELA [42000-240]
+2025-12-01 10:13:19.351400-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT *\000d\000aFROM estudiante, escuela\000d\000aWHERE escuela.codigo_escuela=estudiante.codigo_escuela\000d\000a\000d\000a[*]SELECT CODIGO_ESCUELA, CODIGO ESTUDIANTE, AP_ESCTUDIANTE, AM_ESTUDIANTE, NOMBRE\000d\000aFROM ESTUDIANTE, ESCUELA"
+Syntax error in SQL statement "SELECT *\000d\000aFROM estudiante, escuela\000d\000aWHERE escuela.codigo_escuela=estudiante.codigo_escuela\000d\000a\000d\000a[*]SELECT CODIGO_ESCUELA, CODIGO ESTUDIANTE, AP_ESCTUDIANTE, AM_ESTUDIANTE, NOMBRE\000d\000aFROM ESTUDIANTE, ESCUELA"; SQL statement:
+SELECT *
+FROM estudiante, escuela
+WHERE escuela.codigo_escuela=estudiante.codigo_escuela
+
+SELECT CODIGO_ESCUELA, CODIGO ESTUDIANTE, AP_ESCTUDIANTE, AM_ESTUDIANTE, NOMBRE
+FROM ESTUDIANTE, ESCUELA [42000-240]
+2025-12-01 10:13:20.831148-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT *\000d\000aFROM estudiante, escuela\000d\000aWHERE escuela.codigo_escuela=estudiante.codigo_escuela\000d\000a\000d\000a[*]SELECT CODIGO_ESCUELA, CODIGO ESTUDIANTE, AP_ESCTUDIANTE, AM_ESTUDIANTE, NOMBRE\000d\000aFROM ESTUDIANTE, ESCUELA"
+Syntax error in SQL statement "SELECT *\000d\000aFROM estudiante, escuela\000d\000aWHERE escuela.codigo_escuela=estudiante.codigo_escuela\000d\000a\000d\000a[*]SELECT CODIGO_ESCUELA, CODIGO ESTUDIANTE, AP_ESCTUDIANTE, AM_ESTUDIANTE, NOMBRE\000d\000aFROM ESTUDIANTE, ESCUELA"; SQL statement:
+SELECT *
+FROM estudiante, escuela
+WHERE escuela.codigo_escuela=estudiante.codigo_escuela
+
+SELECT CODIGO_ESCUELA, CODIGO ESTUDIANTE, AP_ESCTUDIANTE, AM_ESTUDIANTE, NOMBRE
+FROM ESTUDIANTE, ESCUELA [42000-240]
+2025-12-01 10:15:38.117714-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ESCUELA.CODIGO" no encontrada
+Column "ESCUELA.CODIGO" not found; SQL statement:
+SELECT ESCUELA.CODIGO ESCUELA, CODIGO_ESTUDIANTE, AM_ESTUDIANTE, NOMBRE
+FROM ESCUELA INNER JOIN ESTUDIANTE
+ON ESCUELA.CODIGO_ESCUELA=ESTUDAINTE.CODIGO_ESCUELA [42122-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.lambda$prepareExpressions$2(Select.java:1209)
+	at java.base/java.util.ArrayList.replaceAllRange(ArrayList.java:1803)
+	at java.base/java.util.ArrayList.replaceAll(ArrayList.java:1793)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1209)
+	at org.h2.command.query.Query.prepare(Query.java:235)
+	at org.h2.command.Parser.prepareCommand(Parser.java:492)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2025-12-01 10:15:52.268386-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ESTUDAINTE.CODIGO_ESCUELA" no encontrada
+Column "ESTUDAINTE.CODIGO_ESCUELA" not found; SQL statement:
+SELECT ESCUELA.CODIGO_ESCUELA, CODIGO_ESTUDIANTE, AM_ESTUDIANTE, NOMBRE
+FROM ESCUELA INNER JOIN ESTUDIANTE
+ON ESCUELA.CODIGO_ESCUELA=ESTUDAINTE.CODIGO_ESCUELA [42122-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:149)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:149)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1215)
+	at org.h2.command.query.Query.prepare(Query.java:235)
+	at org.h2.command.Parser.prepareCommand(Parser.java:492)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2025-12-01 10:18:37.431427-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ESTUDAINTE.CODIGO_ESCUELA" no encontrada
+Column "ESTUDAINTE.CODIGO_ESCUELA" not found; SQL statement:
+SELECT ESCUELA.CODIGO_ESCUELA, CODIGO_ESTUDIANTE, AM_ESTUDIANTE, NOMBRE
+FROM ESCUELA INNER JOIN ESTUDIANTE
+ON ESCUELA.CODIGO_ESCUELA=ESTUDAINTE.CODIGO_ESCUELA [42122-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:149)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:149)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1215)
+	at org.h2.command.query.Query.prepare(Query.java:235)
+	at org.h2.command.Parser.prepareCommand(Parser.java:492)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2025-12-03 08:05:03.242468-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "/*Tarea*/\000d\000a/* 1. Mostrar la lista de estudiantes con su respectivo nombre de escuela */\000d\000aSELECT \000d\000a    estudiante.codigo_estudiante,\000d\000a    estudiante.ap_estudiante,\000d\000a    estudiante.am_estudiante,\000d\000a    estudiante.nombre,\000d\000a    escuela.nombre_escuela\000d\000aFROM estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000a\000d\000a\000d\000a/* 2. Obtener todos los nombres de estudiantes incluyendo el nombre de la carrera profesional,\000d\000a      de aquellos que tienen más de 3 hermanos */\000d\000a[*]SELECT \000d\000a    estudiante.codigo_estudiante,\000d\000a    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo,\000d\000a    escuela.nombre_escuela AS carrera_profesional,\000d\000a    estudiante.nroHermanos\000d\000aFROM estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000aWHERE estudiante.nroHermanos > 3\000d\000a\000d\000a\000d\000a/* 3. Mostrar la escuela y los estudiantes que pertenecen a la escuela de Ing. Informática y Sistemas */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    estudiante.codigo_estudiante,\000d\000a    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo\000d\000aFROM escuela\000d\000aINNER JOIN estudiante ON escuela.codigo_escuela = estudiante.codigo_escuela\000d\000aWHERE escuela.nombre_escuela = 'Ingeniería Informática y Sistemas'\000d\000a\000d\000a\000d\000a/* 4. Mostrar todos los docentes que dictan clases en el semestre 1 (adaptado a 2024) */\000d\000aSELECT DISTINCT\000d\000a    docente.codigo_docente,\000d\000a    docente.ap_docente + ' ' + docente.am_docente + ' ' + docente.nombre_docente AS nombre_completo_docente,\000d\000a    docente.titulo_docente,\000d\000a    cargaHorario.semestre\000d\000aFROM docente\000d\000aINNER JOIN cargaHorario ON docente.codigo_docente = cargaHorario.codigo_docente\000d\000aWHERE cargaHorario.semestre = 1\000d\000a\000d\000a\000d\000a/* 5. Recuperar el nombre y el apellido de las escuelas que tienen más de 5 estudiantes */\000d\000aSELECT \000d\000a    escuela.codigo_escuela,\000d\000a    escuela.nombre_escuela,\000d\000a    COUNT(estudiante.codigo_estudiante) AS total_estudiantes\000d\000aFROM escuela\000d\000aINNER JOIN estudiante ON escuela.codigo_escuela = estudiante.codigo_escuela\000d\000aGROUP BY escuela.codigo_escuela, escuela.nombre_escuela\000d\000aHAVING COUNT(estudiante.codigo_estudiante) > 5\000d\000a\000d\000a\000d\000a/* 6. Seleccionar nombre_escuela, ap_estudiante, am_estudiante, nombres, estudiante, sexo\000d\000a      de los estudiantes masculinos */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    estudiante.ap_estudiante,\000d\000a    estudiante.am_estudiante,\000d\000a    estudiante.nombre AS nombres_estudiante,\000d\000a    estudiante.codigo_estudiante AS estudiante,\000d\000a    estudiante.sexo\000d\000aFROM estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000aWHERE estudiante.sexo = 'M'\000d\000a\000d\000a\000d\000a/* 7. Mostrar todos los Planes de estudio con sus respectivas asignaturas */\000d\000aSELECT \000d\000a    planEstudio.codigo_planEstudio,\000d\000a    planEstudio.observaciones_planEstudio,\000d\000a    escuela.nombre_escuela,\000d\000a    asignatura.codigo_asignatura,\000d\000a    asignatura.nombre_asignatura,\000d\000a    asignatura.cat_asignatura,\000d\000a    asignatura.credito_asignatura\000d\000aFROM planEstudio\000d\000aINNER JOIN escuela ON planEstudio.codigo_escuela = escuela.codigo_escuela\000d\000aINNER JOIN asignatura ON planEstudio.codigo_planEstudio = asignatura.codigo_planEstudio\000d\000a\000d\000a\000d\000a/* 8. Calcular cuantos estudiantes hay por escuela, debe mostrar el nombre de la escuela */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    COUNT(estudiante.codigo_estudiante) AS total_estudiantes\000d\000aFROM escuela\000d\000aLEFT JOIN estudiante ON escuela.codigo_escuela = estudiante.codigo_escuela\000d\000aGROUP BY escuela.codigo_escuela, escuela.nombre_escuela\000d\000aORDER BY total_estudiantes DESC\000d\000a\000d\000a\000d\000a/* 9. Contar la cantidad de estudiantes matriculados en el semestre 1 (adaptado) */\000d\000aSELECT \000d\000a    COUNT(DISTINCT matricula.codigo_estudiante) AS total_estudiantes_matriculados,\000d\000a    matricula.semestre\000d\000aFROM matricula\000d\000aWHERE matricula.semestre = 1\000d\000aGROUP BY matricula.semestre\000d\000a\000d\000a\000d\000a/* 10. Calcular la cantidad de matriculados por Escuela en el semestre 1 (adaptado) */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    COUNT(DISTINCT matricula.codigo_estudiante) AS total_matriculados,\000d\000a    matricula.semestre\000d\000aFROM matricula\000d\000aINNER JOIN estudiante ON matricula.codigo_estudiante = estudiante.codigo_estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000aWHERE matricula.semestre = 1\000d\000aGROUP BY escuela.codigo_escuela, escuela.nombre_escuela, matricula.semestre\000d\000aORDER BY total_matriculados DESC\000d\000a\000d\000a\000d\000a/* 11. Mostrar aquellas escuelas que tienen más de 3 matriculados */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    COUNT(DISTINCT matricula.codigo_estudiante) AS total_matriculados\000d\000aFROM escuela\000d\000aINNER JOIN estudiante ON escuela.codigo_escuela = estudiante.codigo_escuela\000d\000aINNER JOIN matricula ON estudiante.codigo_estudiante = matricula.codigo_estudiante\000d\000aGROUP BY escuela.codigo_escuela, escuela.nombre_escuela\000d\000aHAVING COUNT(DISTINCT matricula.codigo_estudiante) > 3\000d\000aORDER BY total_matriculados DESC\000d\000a\000d\000a\000d\000a/* 12. Calcular el promedio de hermanos de todos los estudiantes matriculados \000d\000a       de la Escuela de Ing. Informática y Sistemas */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    AVG(CAST(estudiante.nroHermanos AS FLOAT)) AS promedio_hermanos\000d\000aFROM estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000aINNER JOIN matricula ON estudiante.codigo_estudiante = matricula.codigo_estudiante\000d\000aWHERE escuela.nombre_escuela = 'Ingeniería Informática y Sistemas'\000d\000aGROUP BY escuela.nombre_escuela\000d\000a\000d\000a\000d\000a/* 13. Calcular la media de notas de ingreso por escuela \000d\000a       (Nota: La base de datos no tiene campo 'ciudad', se calcula por escuela) */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    AVG(CAST(estudiante.notaIngreso AS FLOAT)) AS media_nota_ingreso\000d\000aFROM estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000aGROUP BY escuela.codigo_escuela, escuela.nombre_escuela\000d\000aORDER BY media_nota_ingreso DESC\000d\000a\000d\000a\000d\000a/* 14. Mostrar el nombre de los estudiantes que obtuvieron la mejor nota de ingreso por escuela */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo,\000d\000a    estudiante.notaIngreso AS nota_maxima\000d\000aFROM estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000aWHERE estudiante.notaIngreso = (\000d\000a    SELECT MAX(estudiante2.notaIngreso)\000d\000a    FROM estudiante estudiante2\000d\000a    WHERE estudiante2.codigo_escuela = estudiante.codigo_escuela\000d\000a)\000d\000aORDER BY escuela.nombre_escuela"
+Syntax error in SQL statement "/*Tarea*/\000d\000a/* 1. Mostrar la lista de estudiantes con su respectivo nombre de escuela */\000d\000aSELECT \000d\000a    estudiante.codigo_estudiante,\000d\000a    estudiante.ap_estudiante,\000d\000a    estudiante.am_estudiante,\000d\000a    estudiante.nombre,\000d\000a    escuela.nombre_escuela\000d\000aFROM estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000a\000d\000a\000d\000a/* 2. Obtener todos los nombres de estudiantes incluyendo el nombre de la carrera profesional,\000d\000a      de aquellos que tienen más de 3 hermanos */\000d\000a[*]SELECT \000d\000a    estudiante.codigo_estudiante,\000d\000a    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo,\000d\000a    escuela.nombre_escuela AS carrera_profesional,\000d\000a    estudiante.nroHermanos\000d\000aFROM estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000aWHERE estudiante.nroHermanos > 3\000d\000a\000d\000a\000d\000a/* 3. Mostrar la escuela y los estudiantes que pertenecen a la escuela de Ing. Informática y Sistemas */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    estudiante.codigo_estudiante,\000d\000a    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo\000d\000aFROM escuela\000d\000aINNER JOIN estudiante ON escuela.codigo_escuela = estudiante.codigo_escuela\000d\000aWHERE escuela.nombre_escuela = 'Ingeniería Informática y Sistemas'\000d\000a\000d\000a\000d\000a/* 4. Mostrar todos los docentes que dictan clases en el semestre 1 (adaptado a 2024) */\000d\000aSELECT DISTINCT\000d\000a    docente.codigo_docente,\000d\000a    docente.ap_docente + ' ' + docente.am_docente + ' ' + docente.nombre_docente AS nombre_completo_docente,\000d\000a    docente.titulo_docente,\000d\000a    cargaHorario.semestre\000d\000aFROM docente\000d\000aINNER JOIN cargaHorario ON docente.codigo_docente = cargaHorario.codigo_docente\000d\000aWHERE cargaHorario.semestre = 1\000d\000a\000d\000a\000d\000a/* 5. Recuperar el nombre y el apellido de las escuelas que tienen más de 5 estudiantes */\000d\000aSELECT \000d\000a    escuela.codigo_escuela,\000d\000a    escuela.nombre_escuela,\000d\000a    COUNT(estudiante.codigo_estudiante) AS total_estudiantes\000d\000aFROM escuela\000d\000aINNER JOIN estudiante ON escuela.codigo_escuela = estudiante.codigo_escuela\000d\000aGROUP BY escuela.codigo_escuela, escuela.nombre_escuela\000d\000aHAVING COUNT(estudiante.codigo_estudiante) > 5\000d\000a\000d\000a\000d\000a/* 6. Seleccionar nombre_escuela, ap_estudiante, am_estudiante, nombres, estudiante, sexo\000d\000a      de los estudiantes masculinos */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    estudiante.ap_estudiante,\000d\000a    estudiante.am_estudiante,\000d\000a    estudiante.nombre AS nombres_estudiante,\000d\000a    estudiante.codigo_estudiante AS estudiante,\000d\000a    estudiante.sexo\000d\000aFROM estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000aWHERE estudiante.sexo = 'M'\000d\000a\000d\000a\000d\000a/* 7. Mostrar todos los Planes de estudio con sus respectivas asignaturas */\000d\000aSELECT \000d\000a    planEstudio.codigo_planEstudio,\000d\000a    planEstudio.observaciones_planEstudio,\000d\000a    escuela.nombre_escuela,\000d\000a    asignatura.codigo_asignatura,\000d\000a    asignatura.nombre_asignatura,\000d\000a    asignatura.cat_asignatura,\000d\000a    asignatura.credito_asignatura\000d\000aFROM planEstudio\000d\000aINNER JOIN escuela ON planEstudio.codigo_escuela = escuela.codigo_escuela\000d\000aINNER JOIN asignatura ON planEstudio.codigo_planEstudio = asignatura.codigo_planEstudio\000d\000a\000d\000a\000d\000a/* 8. Calcular cuantos estudiantes hay por escuela, debe mostrar el nombre de la escuela */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    COUNT(estudiante.codigo_estudiante) AS total_estudiantes\000d\000aFROM escuela\000d\000aLEFT JOIN estudiante ON escuela.codigo_escuela = estudiante.codigo_escuela\000d\000aGROUP BY escuela.codigo_escuela, escuela.nombre_escuela\000d\000aORDER BY total_estudiantes DESC\000d\000a\000d\000a\000d\000a/* 9. Contar la cantidad de estudiantes matriculados en el semestre 1 (adaptado) */\000d\000aSELECT \000d\000a    COUNT(DISTINCT matricula.codigo_estudiante) AS total_estudiantes_matriculados,\000d\000a    matricula.semestre\000d\000aFROM matricula\000d\000aWHERE matricula.semestre = 1\000d\000aGROUP BY matricula.semestre\000d\000a\000d\000a\000d\000a/* 10. Calcular la cantidad de matriculados por Escuela en el semestre 1 (adaptado) */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    COUNT(DISTINCT matricula.codigo_estudiante) AS total_matriculados,\000d\000a    matricula.semestre\000d\000aFROM matricula\000d\000aINNER JOIN estudiante ON matricula.codigo_estudiante = estudiante.codigo_estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000aWHERE matricula.semestre = 1\000d\000aGROUP BY escuela.codigo_escuela, escuela.nombre_escuela, matricula.semestre\000d\000aORDER BY total_matriculados DESC\000d\000a\000d\000a\000d\000a/* 11. Mostrar aquellas escuelas que tienen más de 3 matriculados */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    COUNT(DISTINCT matricula.codigo_estudiante) AS total_matriculados\000d\000aFROM escuela\000d\000aINNER JOIN estudiante ON escuela.codigo_escuela = estudiante.codigo_escuela\000d\000aINNER JOIN matricula ON estudiante.codigo_estudiante = matricula.codigo_estudiante\000d\000aGROUP BY escuela.codigo_escuela, escuela.nombre_escuela\000d\000aHAVING COUNT(DISTINCT matricula.codigo_estudiante) > 3\000d\000aORDER BY total_matriculados DESC\000d\000a\000d\000a\000d\000a/* 12. Calcular el promedio de hermanos de todos los estudiantes matriculados \000d\000a       de la Escuela de Ing. Informática y Sistemas */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    AVG(CAST(estudiante.nroHermanos AS FLOAT)) AS promedio_hermanos\000d\000aFROM estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000aINNER JOIN matricula ON estudiante.codigo_estudiante = matricula.codigo_estudiante\000d\000aWHERE escuela.nombre_escuela = 'Ingeniería Informática y Sistemas'\000d\000aGROUP BY escuela.nombre_escuela\000d\000a\000d\000a\000d\000a/* 13. Calcular la media de notas de ingreso por escuela \000d\000a       (Nota: La base de datos no tiene campo 'ciudad', se calcula por escuela) */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    AVG(CAST(estudiante.notaIngreso AS FLOAT)) AS media_nota_ingreso\000d\000aFROM estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000aGROUP BY escuela.codigo_escuela, escuela.nombre_escuela\000d\000aORDER BY media_nota_ingreso DESC\000d\000a\000d\000a\000d\000a/* 14. Mostrar el nombre de los estudiantes que obtuvieron la mejor nota de ingreso por escuela */\000d\000aSELECT \000d\000a    escuela.nombre_escuela,\000d\000a    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo,\000d\000a    estudiante.notaIngreso AS nota_maxima\000d\000aFROM estudiante\000d\000aINNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela\000d\000aWHERE estudiante.notaIngreso = (\000d\000a    SELECT MAX(estudiante2.notaIngreso)\000d\000a    FROM estudiante estudiante2\000d\000a    WHERE estudiante2.codigo_escuela = estudiante.codigo_escuela\000d\000a)\000d\000aORDER BY escuela.nombre_escuela"; SQL statement:
+/*Tarea*/
+/* 1. Mostrar la lista de estudiantes con su respectivo nombre de escuela */
+SELECT 
+    estudiante.codigo_estudiante,
+    estudiante.ap_estudiante,
+    estudiante.am_estudiante,
+    estudiante.nombre,
+    escuela.nombre_escuela
+FROM estudiante
+INNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela
+
+
+/* 2. Obtener todos los nombres de estudiantes incluyendo el nombre de la carrera profesional,
+      de aquellos que tienen más de 3 hermanos */
+SELECT 
+    estudiante.codigo_estudiante,
+    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo,
+    escuela.nombre_escuela AS carrera_profesional,
+    estudiante.nroHermanos
+FROM estudiante
+INNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela
+WHERE estudiante.nroHermanos > 3
+
+
+/* 3. Mostrar la escuela y los estudiantes que pertenecen a la escuela de Ing. Informática y Sistemas */
+SELECT 
+    escuela.nombre_escuela,
+    estudiante.codigo_estudiante,
+    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo
+FROM escuela
+INNER JOIN estudiante ON escuela.codigo_escuela = estudiante.codigo_escuela
+WHERE escuela.nombre_escuela = 'Ingeniería Informática y Sistemas'
+
+
+/* 4. Mostrar todos los docentes que dictan clases en el semestre 1 (adaptado a 2024) */
+SELECT DISTINCT
+    docente.codigo_docente,
+    docente.ap_docente + ' ' + docente.am_docente + ' ' + docente.nombre_docente AS nombre_completo_docente,
+    docente.titulo_docente,
+    cargaHorario.semestre
+FROM docente
+INNER JOIN cargaHorario ON docente.codigo_docente = cargaHorario.codigo_docente
+WHERE cargaHorario.semestre = 1
+
+
+/* 5. Recuperar el nombre y el apellido de las escuelas que tienen más de 5 estudiantes */
+SELECT 
+    escuela.codigo_escuela,
+    escuela.nombre_escuela,
+    COUNT(estudiante.codigo_estudiante) AS total_estudiantes
+FROM escuela
+INNER JOIN estudiante ON escuela.codigo_escuela = estudiante.codigo_escuela
+GROUP BY escuela.codigo_escuela, escuela.nombre_escuela
+HAVING COUNT(estudiante.codigo_estudiante) > 5
+
+
+/* 6. Seleccionar nombre_escuela, ap_estudiante, am_estudiante, nombres, estudiante, sexo
+      de los estudiantes masculinos */
+SELECT 
+    escuela.nombre_escuela,
+    estudiante.ap_estudiante,
+    estudiante.am_estudiante,
+    estudiante.nombre AS nombres_estudiante,
+    estudiante.codigo_estudiante AS estudiante,
+    estudiante.sexo
+FROM estudiante
+INNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela
+WHERE estudiante.sexo = 'M'
+
+
+/* 7. Mostrar todos los Planes de estudio con sus respectivas asignaturas */
+SELECT 
+    planEstudio.codigo_planEstudio,
+    planEstudio.observaciones_planEstudio,
+    escuela.nombre_escuela,
+    asignatura.codigo_asignatura,
+    asignatura.nombre_asignatura,
+    asignatura.cat_asignatura,
+    asignatura.credito_asignatura
+FROM planEstudio
+INNER JOIN escuela ON planEstudio.codigo_escuela = escuela.codigo_escuela
+INNER JOIN asignatura ON planEstudio.codigo_planEstudio = asignatura.codigo_planEstudio
+
+
+/* 8. Calcular cuantos estudiantes hay por escuela, debe mostrar el nombre de la escuela */
+SELECT 
+    escuela.nombre_escuela,
+    COUNT(estudiante.codigo_estudiante) AS total_estudiantes
+FROM escuela
+LEFT JOIN estudiante ON escuela.codigo_escuela = estudiante.codigo_escuela
+GROUP BY escuela.codigo_escuela, escuela.nombre_escuela
+ORDER BY total_estudiantes DESC
+
+
+/* 9. Contar la cantidad de estudiantes matriculados en el semestre 1 (adaptado) */
+SELECT 
+    COUNT(DISTINCT matricula.codigo_estudiante) AS total_estudiantes_matriculados,
+    matricula.semestre
+FROM matricula
+WHERE matricula.semestre = 1
+GROUP BY matricula.semestre
+
+
+/* 10. Calcular la cantidad de matriculados por Escuela en el semestre 1 (adaptado) */
+SELECT 
+    escuela.nombre_escuela,
+    COUNT(DISTINCT matricula.codigo_estudiante) AS total_matriculados,
+    matricula.semestre
+FROM matricula
+INNER JOIN estudiante ON matricula.codigo_estudiante = estudiante.codigo_estudiante
+INNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela
+WHERE matricula.semestre = 1
+GROUP BY escuela.codigo_escuela, escuela.nombre_escuela, matricula.semestre
+ORDER BY total_matriculados DESC
+
+
+/* 11. Mostrar aquellas escuelas que tienen más de 3 matriculados */
+SELECT 
+    escuela.nombre_escuela,
+    COUNT(DISTINCT matricula.codigo_estudiante) AS total_matriculados
+FROM escuela
+INNER JOIN estudiante ON escuela.codigo_escuela = estudiante.codigo_escuela
+INNER JOIN matricula ON estudiante.codigo_estudiante = matricula.codigo_estudiante
+GROUP BY escuela.codigo_escuela, escuela.nombre_escuela
+HAVING COUNT(DISTINCT matricula.codigo_estudiante) > 3
+ORDER BY total_matriculados DESC
+
+
+/* 12. Calcular el promedio de hermanos de todos los estudiantes matriculados 
+       de la Escuela de Ing. Informática y Sistemas */
+SELECT 
+    escuela.nombre_escuela,
+    AVG(CAST(estudiante.nroHermanos AS FLOAT)) AS promedio_hermanos
+FROM estudiante
+INNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela
+INNER JOIN matricula ON estudiante.codigo_estudiante = matricula.codigo_estudiante
+WHERE escuela.nombre_escuela = 'Ingeniería Informática y Sistemas'
+GROUP BY escuela.nombre_escuela
+
+
+/* 13. Calcular la media de notas de ingreso por escuela 
+       (Nota: La base de datos no tiene campo 'ciudad', se calcula por escuela) */
+SELECT 
+    escuela.nombre_escuela,
+    AVG(CAST(estudiante.notaIngreso AS FLOAT)) AS media_nota_ingreso
+FROM estudiante
+INNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela
+GROUP BY escuela.codigo_escuela, escuela.nombre_escuela
+ORDER BY media_nota_ingreso DESC
+
+
+/* 14. Mostrar el nombre de los estudiantes que obtuvieron la mejor nota de ingreso por escuela */
+SELECT 
+    escuela.nombre_escuela,
+    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo,
+    estudiante.notaIngreso AS nota_maxima
+FROM estudiante
+INNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela
+WHERE estudiante.notaIngreso = (
+    SELECT MAX(estudiante2.notaIngreso)
+    FROM estudiante estudiante2
+    WHERE estudiante2.codigo_escuela = estudiante.codigo_escuela
+)
+ORDER BY escuela.nombre_escuela [42000-240]
+2025-12-03 08:08:41.194789-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLFeatureNotSupportedException: Caracteristica no soportada: "CHARACTER VARYING +"
+Feature not supported: "CHARACTER VARYING +"; SQL statement:
+SELECT 
+    escuela.nombre_escuela,
+    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo,
+    estudiante.notaIngreso AS nota_maxima
+FROM estudiante
+INNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela
+WHERE estudiante.notaIngreso = (
+    SELECT MAX(estudiante2.notaIngreso)
+    FROM estudiante estudiante2
+    WHERE estudiante2.codigo_escuela = estudiante.codigo_escuela
+)
+ORDER BY escuela.nombre_escuela [50100-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:568)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.getUnsupportedException(DbException.java:287)
+	at org.h2.value.Value.getUnsupportedExceptionForOperation(Value.java:2822)
+	at org.h2.value.Value.add(Value.java:930)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:108)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.Alias.getValue(Alias.java:37)
+	at org.h2.command.query.Select$LazyResultQueryFlat.fetchNextRow(Select.java:1873)
+	at org.h2.result.LazyResult.hasNext(LazyResult.java:78)
+	at org.h2.result.FetchedResult.next(FetchedResult.java:34)
+	at org.h2.command.query.Select.queryFlat(Select.java:749)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:873)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:214)
+	at org.h2.command.query.Query.query(Query.java:548)
+	at org.h2.command.query.Query.query(Query.java:510)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:222)
+	at org.h2.command.Command.executeQuery(Command.java:198)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:257)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2025-12-03 08:09:16.192311-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLFeatureNotSupportedException: Caracteristica no soportada: "CHARACTER VARYING +"
+Feature not supported: "CHARACTER VARYING +"; SQL statement:
+SELECT 
+    escuela.nombre_escuela,
+    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo,
+    estudiante.notaIngreso AS nota_maxima
+FROM estudiante
+INNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela
+WHERE estudiante.notaIngreso = (
+    SELECT MAX(estudiante2.notaIngreso)
+    FROM estudiante estudiante2
+    WHERE estudiante2.codigo_escuela = estudiante.codigo_escuela
+)
+ORDER BY escuela.nombre_escuela [50100-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:568)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.getUnsupportedException(DbException.java:287)
+	at org.h2.value.Value.getUnsupportedExceptionForOperation(Value.java:2822)
+	at org.h2.value.Value.add(Value.java:930)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:108)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.Alias.getValue(Alias.java:37)
+	at org.h2.command.query.Select$LazyResultQueryFlat.fetchNextRow(Select.java:1873)
+	at org.h2.result.LazyResult.hasNext(LazyResult.java:78)
+	at org.h2.result.FetchedResult.next(FetchedResult.java:34)
+	at org.h2.command.query.Select.queryFlat(Select.java:749)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:873)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:214)
+	at org.h2.command.query.Query.query(Query.java:548)
+	at org.h2.command.query.Query.query(Query.java:510)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:222)
+	at org.h2.command.Command.executeQuery(Command.java:198)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:257)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2025-12-03 08:09:17.248911-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLFeatureNotSupportedException: Caracteristica no soportada: "CHARACTER VARYING +"
+Feature not supported: "CHARACTER VARYING +"; SQL statement:
+SELECT 
+    escuela.nombre_escuela,
+    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo,
+    estudiante.notaIngreso AS nota_maxima
+FROM estudiante
+INNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela
+WHERE estudiante.notaIngreso = (
+    SELECT MAX(estudiante2.notaIngreso)
+    FROM estudiante estudiante2
+    WHERE estudiante2.codigo_escuela = estudiante.codigo_escuela
+)
+ORDER BY escuela.nombre_escuela [50100-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:568)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.getUnsupportedException(DbException.java:287)
+	at org.h2.value.Value.getUnsupportedExceptionForOperation(Value.java:2822)
+	at org.h2.value.Value.add(Value.java:930)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:108)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.Alias.getValue(Alias.java:37)
+	at org.h2.command.query.Select$LazyResultQueryFlat.fetchNextRow(Select.java:1873)
+	at org.h2.result.LazyResult.hasNext(LazyResult.java:78)
+	at org.h2.result.FetchedResult.next(FetchedResult.java:34)
+	at org.h2.command.query.Select.queryFlat(Select.java:749)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:873)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:214)
+	at org.h2.command.query.Query.query(Query.java:548)
+	at org.h2.command.query.Query.query(Query.java:510)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:222)
+	at org.h2.command.Command.executeQuery(Command.java:198)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:257)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2025-12-03 08:09:18.054618-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLFeatureNotSupportedException: Caracteristica no soportada: "CHARACTER VARYING +"
+Feature not supported: "CHARACTER VARYING +"; SQL statement:
+SELECT 
+    escuela.nombre_escuela,
+    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo,
+    estudiante.notaIngreso AS nota_maxima
+FROM estudiante
+INNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela
+WHERE estudiante.notaIngreso = (
+    SELECT MAX(estudiante2.notaIngreso)
+    FROM estudiante estudiante2
+    WHERE estudiante2.codigo_escuela = estudiante.codigo_escuela
+)
+ORDER BY escuela.nombre_escuela [50100-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:568)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.getUnsupportedException(DbException.java:287)
+	at org.h2.value.Value.getUnsupportedExceptionForOperation(Value.java:2822)
+	at org.h2.value.Value.add(Value.java:930)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:108)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.Alias.getValue(Alias.java:37)
+	at org.h2.command.query.Select$LazyResultQueryFlat.fetchNextRow(Select.java:1873)
+	at org.h2.result.LazyResult.hasNext(LazyResult.java:78)
+	at org.h2.result.FetchedResult.next(FetchedResult.java:34)
+	at org.h2.command.query.Select.queryFlat(Select.java:749)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:873)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:214)
+	at org.h2.command.query.Query.query(Query.java:548)
+	at org.h2.command.query.Query.query(Query.java:510)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:222)
+	at org.h2.command.Command.executeQuery(Command.java:198)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:257)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2025-12-03 08:10:00.221379-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLFeatureNotSupportedException: Caracteristica no soportada: "CHARACTER VARYING +"
+Feature not supported: "CHARACTER VARYING +"; SQL statement:
+SELECT 
+    escuela.nombre_escuela,
+    estudiante.ap_estudiante + ' ' + estudiante.am_estudiante + ' ' + estudiante.nombre AS nombre_completo,
+    estudiante.notaIngreso AS nota_maxima
+FROM estudiante
+INNER JOIN escuela ON estudiante.codigo_escuela = escuela.codigo_escuela
+WHERE estudiante.notaIngreso = (
+    SELECT MAX(estudiante2.notaIngreso)
+    FROM estudiante estudiante2
+    WHERE estudiante2.codigo_escuela = estudiante.codigo_escuela
+)
+ORDER BY escuela.nombre_escuela [50100-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:568)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.getUnsupportedException(DbException.java:287)
+	at org.h2.value.Value.getUnsupportedExceptionForOperation(Value.java:2822)
+	at org.h2.value.Value.add(Value.java:930)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:108)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.BinaryOperation.getValue(BinaryOperation.java:98)
+	at org.h2.expression.Alias.getValue(Alias.java:37)
+	at org.h2.command.query.Select$LazyResultQueryFlat.fetchNextRow(Select.java:1873)
+	at org.h2.result.LazyResult.hasNext(LazyResult.java:78)
+	at org.h2.result.FetchedResult.next(FetchedResult.java:34)
+	at org.h2.command.query.Select.queryFlat(Select.java:749)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:873)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:214)
+	at org.h2.command.query.Query.query(Query.java:548)
+	at org.h2.command.query.Query.query(Query.java:510)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:222)
+	at org.h2.command.Command.executeQuery(Command.java:198)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:257)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2025-12-22 09:25:33.647629-05:00 database: wrong user or password; user: "EDISON"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:350)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:291)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:811)
+	at org.h2.server.web.WebApp.test(WebApp.java:977)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:154)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 16 more
+2025-12-22 09:25:39.405075-05:00 database: wrong user or password; user: "EDISON"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:350)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:291)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:811)
+	at org.h2.server.web.WebApp.login(WebApp.java:1038)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:154)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 16 more
+2025-12-22 09:25:58.253264-05:00 database: wrong user or password; user: "EDISON"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:350)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:291)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:811)
+	at org.h2.server.web.WebApp.login(WebApp.java:1038)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:154)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 16 more
+2025-12-22 09:26:59.451893-05:00 database: wrong user or password; user: "ADI"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:350)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:291)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:811)
+	at org.h2.server.web.WebApp.login(WebApp.java:1038)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:154)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 16 more
+2025-12-22 09:31:16.142795-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE Escuela (\000d\000a    codigo_escuela INT PRIMARY KEY,\000d\000a    nombre_escuela VARCHAR(100),\000d\000a    ubicacion VARCHAR(100)\000d\000a)\000d\000a[*]CREATE TABLE Estudiantes (\000d\000a    codigo_estudiante INT PRIMARY KEY,\000d\000a    nombre_estudiante VARCHAR(50),\000d\000a    ap_estudiante VARCHAR(50),\000d\000a    am_estudiante VARCHAR(50),\000d\000a    codigo_escuela INT,\000d\000a    FOREIGN KEY (codigo_escuela) REFERENCES Escuela(codigo_escuela)\000d\000a)"
+Syntax error in SQL statement "CREATE TABLE Escuela (\000d\000a    codigo_escuela INT PRIMARY KEY,\000d\000a    nombre_escuela VARCHAR(100),\000d\000a    ubicacion VARCHAR(100)\000d\000a)\000d\000a[*]CREATE TABLE Estudiantes (\000d\000a    codigo_estudiante INT PRIMARY KEY,\000d\000a    nombre_estudiante VARCHAR(50),\000d\000a    ap_estudiante VARCHAR(50),\000d\000a    am_estudiante VARCHAR(50),\000d\000a    codigo_escuela INT,\000d\000a    FOREIGN KEY (codigo_escuela) REFERENCES Escuela(codigo_escuela)\000d\000a)"; SQL statement:
+CREATE TABLE Escuela (
+    codigo_escuela INT PRIMARY KEY,
+    nombre_escuela VARCHAR(100),
+    ubicacion VARCHAR(100)
+)
+CREATE TABLE Estudiantes (
+    codigo_estudiante INT PRIMARY KEY,
+    nombre_estudiante VARCHAR(50),
+    ap_estudiante VARCHAR(50),
+    am_estudiante VARCHAR(50),
+    codigo_escuela INT,
+    FOREIGN KEY (codigo_escuela) REFERENCES Escuela(codigo_escuela)
+) [42000-240]
+2025-12-22 09:31:46.145534-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE Estudiantes (\000d\000a    codigo_estudiante INT PRIMARY KEY,\000d\000a    nombre_estudiante VARCHAR(50),\000d\000a    ap_estudiante VARCHAR(50),\000d\000a    am_estudiante VARCHAR(50),\000d\000a    codigo_escuela INT,\000d\000a    FOREIGN KEY (codigo_escuela) REFERENCES Escuela(codigo_escuela)\000d\000a)\000d\000a[*]CREATE TABLE Escuela (\000d\000a    codigo_escuela INT PRIMARY KEY,\000d\000a    nombre_escuela VARCHAR(100),\000d\000a    ubicacion VARCHAR(100)\000d\000a)"
+Syntax error in SQL statement "CREATE TABLE Estudiantes (\000d\000a    codigo_estudiante INT PRIMARY KEY,\000d\000a    nombre_estudiante VARCHAR(50),\000d\000a    ap_estudiante VARCHAR(50),\000d\000a    am_estudiante VARCHAR(50),\000d\000a    codigo_escuela INT,\000d\000a    FOREIGN KEY (codigo_escuela) REFERENCES Escuela(codigo_escuela)\000d\000a)\000d\000a[*]CREATE TABLE Escuela (\000d\000a    codigo_escuela INT PRIMARY KEY,\000d\000a    nombre_escuela VARCHAR(100),\000d\000a    ubicacion VARCHAR(100)\000d\000a)"; SQL statement:
+CREATE TABLE Estudiantes (
+    codigo_estudiante INT PRIMARY KEY,
+    nombre_estudiante VARCHAR(50),
+    ap_estudiante VARCHAR(50),
+    am_estudiante VARCHAR(50),
+    codigo_escuela INT,
+    FOREIGN KEY (codigo_escuela) REFERENCES Escuela(codigo_escuela)
+)
+CREATE TABLE Escuela (
+    codigo_escuela INT PRIMARY KEY,
+    nombre_escuela VARCHAR(100),
+    ubicacion VARCHAR(100)
+) [42000-240]
+2025-12-22 09:34:30.638011-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE Escuela (\000d\000a    codigo_escuela INT PRIMARY KEY,\000d\000a    nombre_escuela VARCHAR(100),\000d\000a    ubicacion VARCHAR(100)\000d\000a)\000d\000a\000d\000a[*]CREATE TABLE Estudiantes (\000d\000a    codigo_estudiante INT PRIMARY KEY,\000d\000a    nombre_estudiante VARCHAR(50),\000d\000a    ap_estudiante VARCHAR(50),\000d\000a    am_estudiante VARCHAR(50),\000d\000a    codigo_escuela INT,\000d\000a    FOREIGN KEY (codigo_escuela) REFERENCES Escuela(codigo_escuela)\000d\000a)"
+Syntax error in SQL statement "CREATE TABLE Escuela (\000d\000a    codigo_escuela INT PRIMARY KEY,\000d\000a    nombre_escuela VARCHAR(100),\000d\000a    ubicacion VARCHAR(100)\000d\000a)\000d\000a\000d\000a[*]CREATE TABLE Estudiantes (\000d\000a    codigo_estudiante INT PRIMARY KEY,\000d\000a    nombre_estudiante VARCHAR(50),\000d\000a    ap_estudiante VARCHAR(50),\000d\000a    am_estudiante VARCHAR(50),\000d\000a    codigo_escuela INT,\000d\000a    FOREIGN KEY (codigo_escuela) REFERENCES Escuela(codigo_escuela)\000d\000a)"; SQL statement:
+CREATE TABLE Escuela (
+    codigo_escuela INT PRIMARY KEY,
+    nombre_escuela VARCHAR(100),
+    ubicacion VARCHAR(100)
+)
+
+CREATE TABLE Estudiantes (
+    codigo_estudiante INT PRIMARY KEY,
+    nombre_estudiante VARCHAR(50),
+    ap_estudiante VARCHAR(50),
+    am_estudiante VARCHAR(50),
+    codigo_escuela INT,
+    FOREIGN KEY (codigo_escuela) REFERENCES Escuela(codigo_escuela)
+) [42000-240]
+2025-12-22 09:35:07.601899-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Tipo de dato desconocido : "INTO"
+Unknown data type: "INTO"; SQL statement:
+CREATE TABLE Estudiantes (
+    codigo_estudiante INT PRIMARY KEY,
+    nombre_estudiante VARCHAR(50),
+    ap_estudiante VARCHAR(50),
+
+INSERT INTO Escuela VALUES
+(1, 'Ingenieria Informatica y Sistemas', 'Abancay'),
+(2, 'Ingenieria Civil', 'Abancay'),
+(3, 'Ingenieria de Minas', 'Abancay') [50004-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readIfDataType1(Parser.java:5908)
+	at org.h2.command.Parser.readIfDataType(Parser.java:5739)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5721)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5600)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8983)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8926)
+	at org.h2.command.Parser.parseCreate(Parser.java:6483)
+	at org.h2.command.Parser.parsePrepared(Parser.java:648)
+	at org.h2.command.Parser.parse(Parser.java:584)
+	at org.h2.command.Parser.parse(Parser.java:559)
+	at org.h2.command.Parser.prepareCommand(Parser.java:487)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2025-12-22 09:37:02.020608-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "ESCUELA" ya existe
+Table "ESCUELA" already exists; SQL statement:
+CREATE TABLE Escuela (
+    codigo_escuela INT PRIMARY KEY,
+    nombre_escuela VARCHAR(100),
+    ubicacion VARCHAR(100)
+) [42101-240]
+2025-12-22 09:37:02.025844-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Tipo de dato desconocido : "INTO"
+Unknown data type: "INTO"; SQL statement:
+CREATE TABLE Estudiantes (
+    codigo_estudiante INT PRIMARY KEY,
+    nombre_estudiante VARCHAR(50),
+    ap_estudiante VARCHAR(50),
+
+INSERT INTO Escuela VALUES
+(1, 'Ingenieria Informatica y Sistemas', 'Abancay'),
+(2, 'Ingenieria Civil', 'Abancay'),
+(3, 'Ingenieria de Minas', 'Abancay') [50004-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readIfDataType1(Parser.java:5908)
+	at org.h2.command.Parser.readIfDataType(Parser.java:5739)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5721)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5600)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8983)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8926)
+	at org.h2.command.Parser.parseCreate(Parser.java:6483)
+	at org.h2.command.Parser.parsePrepared(Parser.java:648)
+	at org.h2.command.Parser.parse(Parser.java:584)
+	at org.h2.command.Parser.parse(Parser.java:559)
+	at org.h2.command.Parser.prepareCommand(Parser.java:487)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2025-12-22 09:37:02.029941-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO Estudiantes VALUES\000d\000a(212450, 'Juan', 'Quispe', 'Huamani', 1),\000d\000a(212451, 'Maria', 'Rojas', 'Condori', 2),\000d\000a(212452, 'Luis', 'Ccahuana', 'Puma', 1),\000d\000a(212453, 'Ana', 'Chavez', 'Flores', 3),\000d\000a(212454, 'Carlos', 'Mamani', 'Torres', 2)\000d\000a\000d\000a[*]SELECT * FROM Escuela\000d\000a\000d\000aSELECT * FROM Estudiantes"
+Syntax error in SQL statement "INSERT INTO Estudiantes VALUES\000d\000a(212450, 'Juan', 'Quispe', 'Huamani', 1),\000d\000a(212451, 'Maria', 'Rojas', 'Condori', 2),\000d\000a(212452, 'Luis', 'Ccahuana', 'Puma', 1),\000d\000a(212453, 'Ana', 'Chavez', 'Flores', 3),\000d\000a(212454, 'Carlos', 'Mamani', 'Torres', 2)\000d\000a\000d\000a[*]SELECT * FROM Escuela\000d\000a\000d\000aSELECT * FROM Estudiantes"; SQL statement:
+INSERT INTO Estudiantes VALUES
+(212450, 'Juan', 'Quispe', 'Huamani', 1),
+(212451, 'Maria', 'Rojas', 'Condori', 2),
+(212452, 'Luis', 'Ccahuana', 'Puma', 1),
+(212453, 'Ana', 'Chavez', 'Flores', 3),
+(212454, 'Carlos', 'Mamani', 'Torres', 2)
+
+SELECT * FROM Escuela
+
+SELECT * FROM Estudiantes [42000-240]
+2025-12-22 10:12:22.501277-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]FROM * ESTUDIANTES\000d\000aFROM * ESCUELA"
+Syntax error in SQL statement "[*]FROM * ESTUDIANTES\000d\000aFROM * ESCUELA"; SQL statement:
+FROM * ESTUDIANTES
+FROM * ESCUELA [42000-240]
+2025-12-22 10:12:32.847954-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]FROM * ESTUDIANTES\000d\000aFROM * ESCUELA"
+Syntax error in SQL statement "[*]FROM * ESTUDIANTES\000d\000aFROM * ESCUELA"; SQL statement:
+FROM * ESTUDIANTES
+FROM * ESCUELA [42000-240]
+2025-12-22 10:12:54.353908-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]FROM * ESTUDIANTES"
+Syntax error in SQL statement "[*]FROM * ESTUDIANTES"; SQL statement:
+FROM * ESTUDIANTES [42000-240]
+2025-12-22 10:12:54.353908-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]FROM * ESCUELA"
+Syntax error in SQL statement "[*]FROM * ESCUELA"; SQL statement:
+FROM * ESCUELA [42000-240]
+2025-12-22 10:13:37.759986-05:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT * FROM ESTUDIANTES\000d\000a[*]SELECT * FROM ESCUELA"
+Syntax error in SQL statement "SELECT * FROM ESTUDIANTES\000d\000a[*]SELECT * FROM ESCUELA"; SQL statement:
+SELECT * FROM ESTUDIANTES
+SELECT * FROM ESCUELA [42000-240]
+2026-01-05 09:27:29.778461-05:00 database: wrong user or password; user: "INFORMEACADEMICO"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:177)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 8 more
+2026-01-05 09:27:34.673085-05:00 database: wrong user or password; user: "INFORMEACADEMICO"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:177)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 8 more
+2026-01-05 09:27:55.667840-05:00 database: wrong user or password; user: "INFORMEACADEMICO"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:350)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:291)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:811)
+	at org.h2.server.web.WebApp.login(WebApp.java:1038)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:154)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 16 more
+2026-01-05 09:27:58.178643-05:00 database: wrong user or password; user: "INFORMEACADEMICO"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.server.TcpServerThread.run(TcpServerThread.java:177)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 8 more
+2026-01-05 09:29:48.720333-05:00 database: wrong user or password; user: "INFORMEACADEMICO"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:350)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:291)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:811)
+	at org.h2.server.web.WebApp.test(WebApp.java:977)
+	at org.h2.server.web.WebApp.process(WebApp.java:241)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:154)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 16 more
+2026-01-05 09:29:59.527575-05:00 database: wrong user or password; user: "INFORMEACADEMICO"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:350)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:291)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:811)
+	at org.h2.server.web.WebApp.login(WebApp.java:1038)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:154)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:522)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 16 more
+2026-01-07 00:10:55.494532-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Imposible eliminar "ESCUELA" debido a que "CONSTRAINT_71" depende de él.
+Cannot drop "ESCUELA" because "CONSTRAINT_71" depends on it; SQL statement:
+drop table ESCUELA [90107-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:104)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:129)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-01-07 00:11:18.633921-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "drop table ESCUELA\000d\000a[*]drop table ESTUDIANTES"
+Syntax error in SQL statement "drop table ESCUELA\000d\000a[*]drop table ESTUDIANTES"; SQL statement:
+drop table ESCUELA
+drop table ESTUDIANTES [42000-240]
+2026-01-07 00:12:30.229628-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "DROP TABLE ESCUELA\000d\000a[*]DROP TABLE  ESTUDIANTES"
+Syntax error in SQL statement "DROP TABLE ESCUELA\000d\000a[*]DROP TABLE  ESTUDIANTES"; SQL statement:
+DROP TABLE ESCUELA
+DROP TABLE  ESTUDIANTES [42000-240]
+2026-01-07 00:12:33.000137-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "DROP TABLE ESCUELA\000d\000a[*]DROP TABLE  ESTUDIANTES"
+Syntax error in SQL statement "DROP TABLE ESCUELA\000d\000a[*]DROP TABLE  ESTUDIANTES"; SQL statement:
+DROP TABLE ESCUELA
+DROP TABLE  ESTUDIANTES [42000-240]
+2026-01-07 00:12:33.646765-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "DROP TABLE ESCUELA\000d\000a[*]DROP TABLE  ESTUDIANTES"
+Syntax error in SQL statement "DROP TABLE ESCUELA\000d\000a[*]DROP TABLE  ESTUDIANTES"; SQL statement:
+DROP TABLE ESCUELA
+DROP TABLE  ESTUDIANTES [42000-240]
+2026-01-07 00:13:56.256526-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Imposible eliminar "ESCUELA" debido a que "CONSTRAINT_71" depende de él.
+Cannot drop "ESCUELA" because "CONSTRAINT_71" depends on it; SQL statement:
+DROP TABLE ESCUELA [90107-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:104)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:129)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:306)
+	at org.h2.command.Command.executeUpdate(Command.java:250)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
